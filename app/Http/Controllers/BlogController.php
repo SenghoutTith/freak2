@@ -43,6 +43,12 @@ class BlogController extends Controller
             'message' => 'Blog created successfully',
             'data' => $data
         ]);
-        
+    }
+
+    public function getBlogs()
+    {
+        $blogs = Blog::all();
+
+        return response()->json($blogs);
     }
 }
