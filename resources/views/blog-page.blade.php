@@ -1,7 +1,7 @@
 <h1>welcome to blog page hehehe, plz work ;(</h1>
 <h1>lmaooo v2</h1>
 
-<form action="blog" method="post">
+<form action="/api/blog" method="post">
     @csrf
     <input type="text" name="title" placeholder="Title">
     <input type="text" name="description" placeholder="Description">
